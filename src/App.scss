@@ -1,0 +1,39 @@
+$text-color: #413030;
+$text-color-active: lighten($text-color, 10);
+$bakcground-color: #beabab;
+$nav-bar-color: darken($bakcground-color, 20);
+
+
+*{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+}
+
+.nav-bar{
+  display: flex;
+  position: sticky;
+  margin: 0;
+  padding: 0.5rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: $nav-bar-color;
+  &-link{
+    flex: 0 2 7rem;
+    color: $text-color;
+    text-decoration: none;
+    border: 2px solid $text-color;
+    border-radius: 0.5rem;
+    margin: 0 1rem;
+    text-align: center;
+    padding: 0.2rem;
+    &:hover{
+      color: $text-color-active;
+    }
+  }
+}
